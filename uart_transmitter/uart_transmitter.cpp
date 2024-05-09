@@ -3,6 +3,7 @@
 typedef enum{idle, transmit} uart_transmit_states_type;
 
 void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+
 #pragma HLS INTERFACE ap_none port=data
 #pragma HLS INTERFACE ap_none port=baud_rate_signal
 #pragma HLS INTERFACE ap_none port=uart_tx
@@ -23,7 +24,7 @@ void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, boo
 
 
 	switch(state) {
-	case idle:
+	 idle:
 		if ( start == 1) {
 			next_state = transmit;
 			uart_tx_local      = 1;
@@ -35,7 +36,7 @@ void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, boo
 		}
 
 		break;
-	case transmit:
+	transmit:
 		if (baud_rate_signal == 1) {
 			if (bit_counter == 10) {
 				next_state        = idle;
@@ -61,10 +62,3 @@ void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, boo
 	default:
 		break;
 	}
-
-
-	state                     = next_state;
-	bit_counter               = next_bit_counter;
-	uart_tx                   = uart_tx_local;
-
-}

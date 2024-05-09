@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;uart_transmitter-vhls/uart_transmitter.cpp&apos; ..."/>
+	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1454" tag="" content="Compilation errors found: In file included from uart_transmitter-vhls/uart_transmitter.cpp:1:
+uart_transmitter-vhls/uart_transmitter.cpp:64:3: error: expected &apos;}&apos;
+ }
+  ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:90: note: to match this &apos;{&apos;
+void uart_transmitter(bool &amp;uart_tx, ap_uint&lt;8&gt; data, bool baud_rate_signal, bool start) {
+                                                                                         ^
+1 error generated."/>
+</Messages>

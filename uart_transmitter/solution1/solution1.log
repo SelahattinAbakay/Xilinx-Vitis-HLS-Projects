@@ -1,0 +1,114 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'uart_transmitter-vhls/uart_transmitter.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from uart_transmitter-vhls/uart_transmitter.cpp:1:
+uart_transmitter-vhls/uart_transmitter.cpp:5:38: error: unknown type name 'ap_uint'
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                                     ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:45: error: expected ')'
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                                            ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:22: note: to match this '('
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                     ^
+uart_transmitter-vhls/uart_transmitter.cpp:14:2: error: use of undeclared identifier 'ap_uint'
+ ap_uint<10> d = ((bool)0b1, (ap_int<8>)data, (bool)0b0);
+ ^
+uart_transmitter-vhls/uart_transmitter.cpp:14:14: error: use of undeclared identifier 'd'
+ ap_uint<10> d = ((bool)0b1, (ap_int<8>)data, (bool)0b0);
+             ^
+uart_transmitter-vhls/uart_transmitter.cpp:14:31: error: use of undeclared identifier 'ap_int'
+ ap_uint<10> d = ((bool)0b1, (ap_int<8>)data, (bool)0b0);
+                              ^
+uart_transmitter-vhls/uart_transmitter.cpp:14:40: error: expected expression
+ ap_uint<10> d = ((bool)0b1, (ap_int<8>)data, (bool)0b0);
+                                       ^
+uart_transmitter-vhls/uart_transmitter.cpp:28:8: error: use of undeclared identifier 'start'
+  if ( start == 1) {
+       ^
+uart_transmitter-vhls/uart_transmitter.cpp:40:7: error: use of undeclared identifier 'baud_rate_signal'
+  if (baud_rate_signal == 1) {
+      ^
+uart_transmitter-vhls/uart_transmitter.cpp:47:21: error: use of undeclared identifier 'd'
+    uart_tx_local = d[bit_counter];
+                    ^
+uart_transmitter-vhls/uart_transmitter.cpp:54:21: error: use of undeclared identifier 'd'
+    uart_tx_local = d[bit_counter-1];
+                    ^
+uart_transmitter-vhls/uart_transmitter.cpp:64:3: error: expected '}'
+ }
+  ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:90: note: to match this '{'
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                                                                                         ^
+11 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'uart_transmitter-vhls/uart_transmitter.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from uart_transmitter-vhls/uart_transmitter.cpp:1:
+uart_transmitter-vhls/uart_transmitter.cpp:64:3: error: expected '}'
+ }
+  ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:90: note: to match this '{'
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                                                                                         ^
+1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'uart_transmitter-vhls/uart_transmitter.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from uart_transmitter-vhls/uart_transmitter.cpp:1:
+uart_transmitter-vhls/uart_transmitter.cpp:64:3: error: expected '}'
+ }
+  ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:90: note: to match this '{'
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                                                                                         ^
+1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'uart_transmitter-vhls/uart_transmitter.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from uart_transmitter-vhls/uart_transmitter.cpp:1:
+uart_transmitter-vhls/uart_transmitter.cpp:64:3: error: expected '}'
+ }
+  ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:90: note: to match this '{'
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                                                                                         ^
+1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'uart_transmitter-vhls/uart_transmitter.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from uart_transmitter-vhls/uart_transmitter.cpp:1:
+uart_transmitter-vhls/uart_transmitter.cpp:64:3: error: expected '}'
+ }
+  ^
+uart_transmitter-vhls/uart_transmitter.cpp:5:90: note: to match this '{'
+void uart_transmitter(bool &uart_tx, ap_uint<8> data, bool baud_rate_signal, bool start) {
+                                                                                         ^
+1 error generated.

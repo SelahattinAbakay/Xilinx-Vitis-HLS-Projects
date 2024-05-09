@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] Compilation errors found: In file included from uart_transmitter-vhls/uart_transmitter.cpp:1:&#xD;&#xA;uart_transmitter-vhls/uart_transmitter.cpp:64:3: error: expected '}'&#xD;&#xA; }&#xD;&#xA;  ^&#xD;&#xA;uart_transmitter-vhls/uart_transmitter.cpp:5:90: note: to match this '{'&#xD;&#xA;void uart_transmitter(bool &amp;uart_tx, ap_uint&lt;8> data, bool baud_rate_signal, bool start) {&#xD;&#xA;                                                                                         ^&#xD;&#xA;1 error generated.&#xD;&#xA;Failed during preprocessing.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source D:/vivado_hls/uart_transmitter-vhls/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main D:/vivado_hls/uart_transmitter-vhls/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="uart_transmitter-vhls" solutionName="solution1" date="2024-05-06T18:04:43.288+0300"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
